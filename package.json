@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "build-opcut-linux": "docker-compose up --build",
+    "build-opcut-windows": "gcc -shared -o output/libopcut.dll -fPIC -O2 lib/opcut.c",
+    "start": "node main"
+  },
+  "dependencies": {
+    "ffi-rs": "^1.0.94",
+    "ref-napi": "^3.0.3",
+    "ref-struct-napi": "^1.1.1"
+  }
+}
