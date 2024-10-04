@@ -1,13 +1,26 @@
 {
-  "type": "module",
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "build-opcut-linux": "docker-compose up --build",
-    "build-opcut-windows": "gcc -shared -o output/libopcut.dll -fPIC -O2 lib/opcut.c",
-    "start": "node main"
+    "build-opcut-windows": "gcc -shared -o output/libopcut.dll -fPIC -O2 src/lib/opcut.c",
+    "start": "ts-node src/index.ts"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "ffi-rs": "^1.0.94",
     "ref-napi": "^3.0.3",
-    "ref-struct-napi": "^1.1.1"
+    "ref-struct-napi": "^1.1.1",
+    "stock-cutting": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/ref-napi": "^3.0.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }

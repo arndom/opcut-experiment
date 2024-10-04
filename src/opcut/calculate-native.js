@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import os from "os";
 import ffi from "ffi-rs";
 import ref from "ref-napi";

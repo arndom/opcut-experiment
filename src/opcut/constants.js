@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import ref from "ref-napi";
 import StructType from "ref-struct-napi";
 

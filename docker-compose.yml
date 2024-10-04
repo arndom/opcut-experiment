@@ -1,11 +1,11 @@
 name: 'linux env opcut-builder'
-version: '3.8'
+# version: '3.8'
 
 services:
   build-linux:
     build:
       context: .
-      dockerfile: docker/linux.dockerfile
+      dockerfile: src/docker/linux.dockerfile
     volumes:
       - ./output:/mnt
     command: cp /libopcut.so /mnt/
